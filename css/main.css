@@ -339,6 +339,10 @@ ul {
     margin-right: 1em;
 }
 
+.project .section__heading-paragraph {
+    margin: auto;
+}
+
 /* MEDIA QUERIES */
 
 /* TABLETS 768px */
@@ -376,7 +380,6 @@ ul {
     .services .wrapper {
         max-width: 512px;
         margin: 0 auto;
-
     }
 
     /* RELAX SECTION */
@@ -418,6 +421,14 @@ ul {
         background: url(../img/iPad-air.png) 60vw 10vh no-repeat;
     }
 
+    .project__heading {
+        font-size: 18px;
+    }
+
+    .project p {
+        max-width: 512px;
+    }
+
 }
 
 /* SMALL LAPTOPS */
@@ -446,6 +457,10 @@ ul {
     }
 
     /* PROJECT SECTION */
+    .project .wrapper {
+        max-width: 660px;
+    }
+
 
     /* LAPTOPS AND DESKTOPS */
     @media (min-width: 1200px) {
@@ -484,4 +499,7 @@ ul {
         }
 
         /* PROJECT SECTION */
+        .project .wrapper {
+            max-width: 980px;
+        }
     }
