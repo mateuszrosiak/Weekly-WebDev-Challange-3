@@ -217,7 +217,7 @@ ul {
     line-height: 1em;
     letter-spacing: -2px;
     margin-bottom: 0.45em;
-    margin-top: 0.45em;
+    padding-top: 0.45em;
 }
 
 .section__heading-paragraph {
@@ -290,6 +290,10 @@ ul {
 }
 
 /* PROJECT SECTION */
+.project {
+    margin-bottom: 5em;
+}
+
 .project .wrapper {
     margin: 0em 1.5em 0 1.5em;
     text-align: left;
@@ -341,6 +345,36 @@ ul {
 
 .project .section__heading-paragraph {
     margin: auto;
+}
+
+/* CULTURE SECTION */
+.culture {
+    background-color: #f9f9f9;
+}
+
+.culture .feature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.culture .feature-box__description {
+    text-align: center;
+}
+
+.culture .feature-box__description .feature-box__h4 {
+    margin: 0;
+    line-height: 2;
+}
+
+.culture .feature-box__desc {
+    margin: 0;
+    max-width: 300px;
+}
+
+.culture .feature-box__icon {
+    margin-right: 1em;
+    margin-bottom: 1em;
 }
 
 /* MEDIA QUERIES */
@@ -418,7 +452,7 @@ ul {
     }
 
     .project {
-        background: url(../img/iPad-air.png) 60vw 10vh no-repeat;
+        background: url(../img/iPad-air.png) 60vw 20vh no-repeat;
     }
 
     .project__heading {
@@ -427,6 +461,40 @@ ul {
 
     .project p {
         max-width: 512px;
+    }
+
+    /* CULTURE SECTION */
+    .culture {
+        padding-bottom: 100px;
+    }
+
+    .culture .feature-boxes {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 56px;
+        max-width: 960px;
+        justify-items: center;
+    }
+
+    .culture .feature-box:nth-child(2) {
+        position: relative;
+    }
+    .culture .feature-box:nth-child(2)::after {
+        content: "";
+        position: absolute;
+        top: 4vh;
+        width: 50%;
+        right: -30%;
+        border-top: 2px solid #777777;
+    }
+
+    .culture .feature-box:nth-child(2)::before {
+        content: "";
+        position: absolute;
+        top: 4vh;
+        width: 50%;
+        left: -30%;
+        border-top: 2px solid #777777;
     }
 
 }
@@ -480,7 +548,7 @@ ul {
         }
 
         .section__h3 {
-            margin-top: 2.5em;
+            padding-top: 2.5em;
         }
 
         .section__heading-paragraph {
